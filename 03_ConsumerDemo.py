@@ -2,7 +2,8 @@ from confluent_kafka import Consumer, KafkaError
 
 settings = {
     'bootstrap.servers': '127.0.0.1:9092',
-    'group.id': 'my-python-application',
+    'group.id': 'my-python_3-application',
+    'client.id': 'client-1',
     'enable.auto.commit': True,
     'session.timeout.ms': 6000,
     'default.topic.config': {'auto.offset.reset': 'earliest'}
